@@ -5,12 +5,12 @@
         <th>Dates</th>
         <th></th>
     </tr>
-    <tr ng-repeat="person in persons track by $index">
+    <tr ng-repeat="person in persons">
         <td>{{person.name}}</td>
         <td>{{person.nationality}}</td>
         <td>{{person.birthdate | date:'yyyy'}}-{{person.deathdate | date:'yyyy'}}</td>
         <td>
-            <input type="button" ng-click="showDetails({ person: person })" value="Details" class="btn btn-primary" />
+            <input type="button" ng-click="showDetails()(person)" value="Details" class="btn btn-primary" />
         </td>
     </tr>
 </table>
