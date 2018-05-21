@@ -41,9 +41,9 @@ angular.module("app").controller("LabController", [
       }
     ];
 
-    vm.showDetails = show;
+    vm.showDetails = showDetails;
 
-    function show(person) {
+    function showDetails(person) {
       alert("Show details for: " + person.name);
     }
   }
