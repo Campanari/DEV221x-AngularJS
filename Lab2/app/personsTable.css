@@ -1,16 +1,7 @@
-table, th, td {
+td {
   border-collapse: collapse;
   padding: 5px;
 }
-table, tr:hover {
-  background-color:#C0C0C0;
+tr:hover {
+  background-color: #C0C0C0;
 }
-table, tr:hover td {
-  background-color:#FFFFFF;
-}
-/* table tr:nth-child(odd) {
-  background-color: #f1f1f1;
-}
-table tr:nth-child(even) {
-  background-color: #ffffff;
-} */

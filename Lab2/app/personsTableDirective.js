@@ -11,11 +11,6 @@ function personsTableDirective() {
             showDetails: "&"
         },
         templateUrl: "./app/personsTableTemplate.html",
-        replace: true,
-        link: link
+        replace: true
     };
-
-    function link(scope, element, attrs, controllers) {
-
-    }
 }
