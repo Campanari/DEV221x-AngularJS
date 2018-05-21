@@ -1,0 +1,16 @@
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Nationality</th>
+        <th>Dates</th>
+        <th></th>
+    </tr>
+    <tr ng-repeat="person in persons track by $index">
+        <td>{{person.name}}</td>
+        <td>{{person.nationality}}</td>
+        <td>{{person.birthdate | date:'yyyy'}}-{{person.deathdate | date:'yyyy'}}</td>
+        <td>
+            <input type="button" ng-click="showDetails(person)" value="Details" class="btn btn-primary" />
+        </td>
+    </tr>
+</table>
